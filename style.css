@@ -22,11 +22,13 @@ h1 {
   font-size: 3em;
   color: black;
   padding: 1em;
+  z-index: 11;
 }
 section {
   margin: auto;
   width: 50%;
   padding: 10px;
+  z-index: 10;
 }
 .scramble {
   margin-top: 20px;
@@ -59,4 +61,83 @@ section {
 }
 #stop {
   display: none;
+}
+.bola {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+  animation-name: animate;
+  animation-duration: 30s;
+  position: absolute;
+  z-index: 1;
+  animation-iteration-count: infinite;
+}
+.bola1 {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+  animation-name: animate1;
+  animation-duration: 30s;
+  position: absolute;
+  z-index: 1;
+  animation-iteration-count: infinite;
+}
+@keyframes animate {
+  0% {
+    background-color: rgba(255, 0, 0, 0.096);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: rgba(255, 255, 0, 0.123);
+    left: 700px;
+    top: 200px;
+  }
+  50% {
+    background-color: rgba(0, 0, 255, 0.123);
+    left: 700px;
+    top: 500px;
+  }
+  75% {
+    background-color: rgba(0, 128, 0, 0.082);
+    left: 0px;
+    top: 400px;
+  }
+  100% {
+    background-color: rgba(255, 0, 0, 0.048);
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframes animate1 {
+  0% {
+    background-color: rgba(255, 0, 0, 0.219);
+    right: 0px;
+    bottom: 0px;
+    border-radius: 0%;
+  }
+  25% {
+    background-color: rgba(255, 255, 0, 0.226);
+    right: 700px;
+    bottom: 200px;
+  }
+  50% {
+    background-color: rgba(0, 0, 255, 0.185);
+    right: 700px;
+    bottom: 500px;
+  }
+  75% {
+    background-color: rgba(0, 128, 0, 0.226);
+    right: 0px;
+    bottom: 400px;
+  }
+  100% {
+    background-color: rgba(255, 0, 0, 0.247);
+    right: 0px;
+    bottom: 0px;
+  }
 }

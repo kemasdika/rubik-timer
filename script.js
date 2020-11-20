@@ -1,4 +1,4 @@
-// buat scramble acak#logika sendiri
+// membuat scramble acak
 document.getElementById("scram1","scram2","scram3","scram4").onclick = function(){scramble()}
 function scramble(){
     document.getElementById("scram1").innerHTML = document.getElementById("scram2").innerHTML ;
@@ -6,7 +6,7 @@ function scramble(){
     document.getElementById("scram3").innerHTML = document.getElementById("scram4").innerHTML ;
     document.getElementById("scram4").innerHTML = document.getElementById("scram1").innerHTML ;
 }
-// buat timer #tutorial + logikasendiri
+// membuat timer
 let startButton = document.getElementById("start");
 let stopButton = document.getElementById("stop");
 let resetButton = document.getElementById("reset");
