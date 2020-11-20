@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Rubik Timer</title>
+</head>
+<body>
+    <div class="wrap">
+        <nav>
+            <h1>Rubik Timer</h1>
+        </nav>
+        <section>
+            <div class="scramble">
+                <p id="scram1"> L D B L R D' F2 U2 R2 F' L2 D2 U' L2 U B F L' R F L2 R F D L B' F' U' L2 B</p>
+                <p id="scram2" style="display: none;"> D' U' R F U' B' U B' R' U B F' D L' B' F R' B F L' D U B F2 R D' U2 R2 F' L2</p>
+                <p id="scram3" style="display: none;"> F2 D B F2 U' R2 B2 R' D L2 B R2 B F R2 D2 F' R D B' L2 D U' L' B2 L D U' B L'</p>
+                <p id="scram4" style="display: none;"> B' F' D2 F2 U R2 B' F R' U' R' F' R' U B' U' R D U2 L' R2 U R' B' D U B2 L2 R' U2</p>
+            </div>
+            <div class="timer">
+                <p id="time">00:00:00</p>
+            </div>
+            <div class="starter">
+                <div class="play">
+                    <p id="start">START</p>
+                    <p id="stop">STOP</p>
+                </div>
+                <div class="btnReset">
+                    <P id="reset">RESET</P>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
